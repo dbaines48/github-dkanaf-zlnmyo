@@ -1,0 +1,92 @@
+<style>
+  span {
+    font: normal normal 600 16px/22px sans-serif;
+  }
+
+  .form-container {
+    border: 1px solid #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 150px;
+    width: 400px;
+    max-height: 300px;
+    overflow: auto;
+  }
+
+  .innerwrap {
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  input[type='text'] {
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    height: 34px;
+    width: calc(100% - 10px);
+  }
+
+  :host ::ng-deep {
+    ejs-datetimepicker {
+      width: 100%;
+    }
+
+    input.e-input.e-datetimepicker {
+      border: 1px solid #c0c0c0;
+      border-radius: 5px;
+      height: 34px;
+      width: calc(100% - 10px);
+    }
+  }
+</style>
+
+<div class="form-container">
+  <div class="innerwrap">
+    <span>Text Input</span><input type="text" name="" id="" />
+  </div>
+
+  <div class="innerwrap">
+    <span>Text Input</span><input type="text" name="" id="" />
+  </div>
+
+  <div class="innerwrap">
+    <span>Text Input</span><input type="text" name="" id="" />
+  </div>
+
+  <div class="innerwrap">
+    <span>Text Input</span><input type="text" name="" id="" />
+  </div>
+
+  <div class="innerwrap">
+    <span>Masked DateTimePicker with mask placeholder:</span>
+    <ejs-datetimepicker
+      [enableMask]="enableMaskSupport"
+      [maskPlaceholder]="maskPlaceholderValue"
+      [format]="dateFormat"
+      [timeFormat]="timeFormat"
+    ></ejs-datetimepicker>
+  </div>
+
+  <div class="innerwrap">
+    <span>Text Input</span><input type="text" name="" id="" />
+  </div>
+
+  <div class="innerwrap">
+    <span>Text Input</span><input type="text" name="" id="" />
+  </div>
+
+  <div class="innerwrap">
+    <span>Masked DateTimePicker with mask placeholder:</span>
+    <ejs-datetimepicker
+      [enableMask]="enableMaskSupport"
+      [maskPlaceholder]="maskPlaceholderValue"
+      [format]="dateFormat"
+      [timeFormat]="timeFormat"
+    ></ejs-datetimepicker>
+  </div>
+</div>
