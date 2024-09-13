@@ -14,7 +14,7 @@ import { MaskedDateTimeService } from '@syncfusion/ej2-angular-calendars';
 export class AppComponent {
   constructor() {}
   public enableMaskSupport: boolean = true;
-  public dateFormat: string = 'dd/MM/yyyy';
+  public dateFormat: string = 'dd/MM/yyyy hh:mm a';
   public timeFormat: string = 'hh:mm a';
   public maskPlaceholderValue: Object = {
     day: 'dd',
